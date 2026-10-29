@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /images.html
+Sitemap: https://breachpro.co.uk/sitemap.xml

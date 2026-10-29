@@ -15,9 +15,9 @@ Rainbow Six Siege strategy site: attack and defence plans for every bomb site on
 
 | Folder | What goes here |
 | --- | --- |
-| `site` | The web app (pages, styles, scripts, manifest, service worker). |
-| `site/assets/maps` | Map and site images. |
-| `data` | Strats as structured data (map, site, side, squad size, rank, operators, loadouts, steps). |
+| `site` | The site: static HTML pages plus `assets/style.css` and `assets/app.js`. Open `site/index.html` in a browser; there is no build step. |
+| `docs` | Screenshot shot lists and the image checklist used to put real in-game images on the pages. |
+| `data` | Strats as structured data, for when the pages are generated rather than hand-built. |
 | `bot` | Breach Pro Discord bot: clip collection, moderation reports to the mods channel. |
 
 ## Rules for content
@@ -26,6 +26,16 @@ Rainbow Six Siege strategy site: attack and defence plans for every bomb site on
 - No personal names anywhere on the site.
 - Fan site, not affiliated with Ubisoft. Follow Ubisoft's fan content guidelines, so no paid membership.
 
-## Status
+## What's built
 
-Design stage. Site files are on my PC and will be added here.
+- 14 Ranked maps and 56 bomb sites, each with attack and defence plans for solo, duo, trio, 4-stack and 5-stack: operators, a to-scale floor plan and numbered steps.
+- 18 operator pages showing where each operator goes on every site.
+- About, privacy and cookies (AdSense-ready), 404, `robots.txt` and `sitemap.xml`.
+- Remembers your last side and squad size in local storage.
+
+## Next
+
+- Add the in-game screenshots (see `docs`).
+- Installable web app: manifest and service worker.
+- Rank-specific plans, the community section and the Discord bot.
+- Deploy to Cloudflare on breachpro.co.uk.
